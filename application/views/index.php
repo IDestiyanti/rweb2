@@ -35,14 +35,14 @@ body {
                         <form id="login-form" class="form" action="" method="post">
                             <h3 class="text-center text-info">Login</h3>
                             <div class="form-group">
-                                <label for="username" class="text-info">Email:</label><br>
-                                <input type="text" name="email" id="email" class="form-control">
-                                <?php echo validation_errors(); ?>
+                                <label for="email" class="text-info">Email:</label><br>
+                                <input type="text" name="email" id="email" class="form-control" >
+                                <?php echo form_error('email'); ?>
                             </div>
                             <div class="form-group">
                                 <label for="password" class="text-info">Password:</label><br>
                                 <input type="password" name="password" id="password" class="form-control">
-                                <?php echo validation_errors(); ?>
+                                <?php echo form_error('password'); ?>
                             </div>
                             <div class="form-group">
                                 <input type="submit" name="submit" class="btn btn-info btn-md" value="Login">
@@ -54,3 +54,6 @@ body {
         </div>
     </div>
 </body>
+<?php
+
+?>
